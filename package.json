@@ -4,12 +4,16 @@
   "description": "light js seeder",
   "main": "index.js",
   "scripts": {
+    "seed:mysql": "node index.js --db=mysql",
+    "seed:pg": "node index.js --db=postgres",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Maxim Choy",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.4.5",
-    "pg": "^8.11.5"
+    "mysql2": "^3.9.7",
+    "pg": "^8.11.5",
+    "yargs": "^17.7.2"
   }
 }
